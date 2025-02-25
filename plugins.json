@@ -1,0 +1,9 @@
+[
+    {
+        "id": "sample-plugin",
+        "name": "Sample Plugin",
+        "author": "Beekeeper Studio",
+        "description": "This is a sample plugin",
+        "repo": "beekeeper-studio/bks-sample-plugin"
+    }
+]
