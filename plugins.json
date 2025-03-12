@@ -1,6 +1,6 @@
 [
     {
-        "id": "sample-plugin",
+        "id": "bks-sample-plugin",
         "name": "Sample Plugin",
         "author": "Beekeeper Studio",
         "description": "This is a sample plugin",
