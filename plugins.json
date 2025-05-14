@@ -1,9 +1,9 @@
 [
     {
-        "id": "sample-plugin",
-        "name": "Sample Plugin",
+        "id": "bks-ai-plugin",
+        "name": "AI Assistant",
         "author": "Beekeeper Studio",
-        "description": "This is a sample plugin",
-        "repo": "beekeeper-studio/bks-sample-plugin"
+        "description": "AI assistant for Beekeeper Studio",
+        "repo": "beekeeper-studio/bks-ai-assistant"
     }
 ]
