@@ -1,9 +1,9 @@
 [
     {
-        "id": "bks-ai-assistant",
-        "name": "AI Assistant",
+        "id": "bks-ai-shell",
+        "name": "AI Shell",
         "author": "Beekeeper Studio",
         "description": "AI assistant for Beekeeper Studio",
-        "repo": "beekeeper-studio/bks-ai-assistant"
+        "repo": "beekeeper-studio/bks-ai-shell"
     }
 ]
