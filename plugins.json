@@ -3,7 +3,7 @@
         "id": "bks-ai-shell",
         "name": "AI Shell",
         "author": "Beekeeper Studio",
-        "description": "AI assistant for Beekeeper Studio",
+        "description": "Ask AI to analyze your database and generate SQL queries.",
         "repo": "beekeeper-studio/bks-ai-shell"
     }
 ]
