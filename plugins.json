@@ -5,5 +5,12 @@
         "author": "Beekeeper Studio",
         "description": "Ask AI to analyze your database and generate SQL queries.",
         "repo": "beekeeper-studio/bks-ai-shell"
+    },
+    {
+        "id": "bks-er-diagram",
+        "name": "ER Diagram",
+        "author": "Beekeeper Studio",
+        "description": "Visualize relational database schemas with an interactive ER diagram viewer.",
+        "repo": "beekeeper-studio/bks-er-diagram"
     }
 ]
