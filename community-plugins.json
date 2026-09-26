@@ -1,6 +1,6 @@
 [
     {
-        id: "t3zca-db-manager",
+        "id": "t3zca-db-manager",
         "name": "DB Manager Pro",
         "author": "T3zcaDev",
         "description": "Live stream cloning, smart backups, schema diff, health auditor, mock data generator, and Docker/.env auto-discovery.",
