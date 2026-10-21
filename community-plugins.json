@@ -5,5 +5,12 @@
         "author": "Gldywn",
         "description": "Human-approved SQL for AI agents: an agent proposes a query, you approve it in Beekeeper Studio before it runs, read-only by default.",
         "repo": "Gldywn/gatekeeper"
+    },
+    {
+        "id": "explain-visualizer",
+        "name": "Explain Visualizer",
+        "author": "rathboma",
+        "description": "Visualize query execution plans as an interactive diagram, and find the slow parts of a query.",
+        "repo": "rathboma/bk-plugin-explain-visualizer"
     }
 ]
