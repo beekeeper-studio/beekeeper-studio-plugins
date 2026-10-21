@@ -2,7 +2,7 @@
 
 #### Summary
 
-<!-- Summary of your package -->
+<!-- Summary of your plugin -->
 
 #### Checklist
 
