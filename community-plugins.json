@@ -12,5 +12,12 @@
         "author": "rathboma",
         "description": "Visualize query execution plans as an interactive diagram, and find the slow parts of a query.",
         "repo": "rathboma/bk-plugin-explain-visualizer"
+    },
+    {
+        "id": "bk-plugin-pivot-tables",
+        "name": "Pivot Tables",
+        "author": "rathboma",
+        "description": "Build pivot tables from query results, selections, or tables, and export them to Excel, PDF, Markdown, CSV, HTML, or an image.",
+        "repo": "rathboma/bk-plugin-pivot-tables"
     }
 ]
