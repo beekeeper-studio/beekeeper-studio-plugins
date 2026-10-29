@@ -1,2 +1,9 @@
 [
+    {
+        "id": "bk-plugin-map-visualization",
+        "name": "Map Visualization",
+        "author": "rathboma",
+        "description": "Plot query results on an interactive map: points, bubbles, numbered markers, heatmaps, clusters, paths and filled regions.",
+        "repo": "rathboma/bk-plugin-map-visualization"
+    }
 ]
