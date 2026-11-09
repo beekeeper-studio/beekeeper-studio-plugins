@@ -5,5 +5,12 @@
     "author": "azmy60",
     "description": "A theme based on the Tokyo Night palette.",
     "repo": "azmy60/bks-tokyo-night"
+  },
+  {
+    "id": "nyx",
+    "name": "Nyx",
+    "author": "not-night-but",
+    "description": "Day's typical Nyx theme. Goddess of the night. I would avoid the light version :)",
+    "repo": "not-night-but/bks-nyx-theme"
   }
 ]
