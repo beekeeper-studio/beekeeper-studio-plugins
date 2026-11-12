@@ -33,5 +33,19 @@
     "author": "Beekeeper Studio",
     "description": "A theme based on the classic Monokai palette.",
     "repo": "beekeeper-studio/theme-monokai"
+  },
+  {
+    "id": "evening",
+    "name": "Evening",
+    "author": "Beekeeper Studio",
+    "description": "Dusky plum, dusty rose and warm amber from street silhouettes and sunset skies, balanced by waterfront blue and cloud lilac.",
+    "repo": "beekeeper-studio/theme-evening"
+  },
+  {
+    "id": "windows-98",
+    "name": "Windows 98",
+    "author": "Beekeeper Studio",
+    "description": "Inspired by the classic Windows 98 theme. No, it's actually win 98.",
+    "repo": "beekeeper-studio/theme-windows-98"
   }
 ]
