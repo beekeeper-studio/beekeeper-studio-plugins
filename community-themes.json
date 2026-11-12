@@ -12,5 +12,26 @@
     "author": "not-night-but",
     "description": "Day's typical Nyx theme. Goddess of the night. I would avoid the light version :)",
     "repo": "not-night-but/bks-nyx-theme"
+  },
+  {
+    "id": "blueberry-banana",
+    "name": "Blueberry Banana",
+    "author": "Beekeeper Studio",
+    "description": "A fork of the Blueberry Banana VS Code theme by Peter Shershov.",
+    "repo": "beekeeper-studio/theme-blueberry-banana"
+  },
+  {
+    "id": "glass",
+    "name": "Glass",
+    "author": "Beekeeper Studio",
+    "description": "Frosted, translucent surfaces inspired by macOS.",
+    "repo": "beekeeper-studio/theme-glass"
+  },
+  {
+    "id": "monokai",
+    "name": "Monokai",
+    "author": "Beekeeper Studio",
+    "description": "A theme based on the classic Monokai palette.",
+    "repo": "beekeeper-studio/theme-monokai"
   }
 ]
