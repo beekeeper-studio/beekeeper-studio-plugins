@@ -47,5 +47,33 @@
     "author": "Beekeeper Studio",
     "description": "Inspired by the classic Windows 98 theme. No, it's actually win 98.",
     "repo": "beekeeper-studio/theme-windows-98"
+  },
+  {
+    "id": "gruvbox",
+    "name": "Gruvbox",
+    "author": "Beekeeper Studio",
+    "description": "A theme based on the gruvbox palette",
+    "repo": "beekeeper-studio/theme-gruvbox"
+  },
+  {
+    "id": "ayu",
+    "name": "Ayu",
+    "author": "Beekeeper Studio",
+    "description": "A theme based on the Ayu palette",
+    "repo": "beekeeper-studio/theme-ayu"
+  },
+  {
+    "id": "catppuccin",
+    "name": "Catppuccin",
+    "author": "Beekeeper Studio",
+    "description": "A theme based on the Catppuccin color palette, using Latte for light, and Mocha for dark",
+    "repo": "beekeeper-studio/theme-catppuccin"
+  },
+  {
+    "id": "nord",
+    "name": "Nord",
+    "author": "Beekeeper Studio",
+    "description": "A theme based on the Nord palette.",
+    "repo": "beekeeper-studio/theme-nord"
   }
 ]
