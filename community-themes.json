@@ -2,9 +2,9 @@
   {
     "id": "tokyo-night",
     "name": "Tokyo Night",
-    "author": "azmy60",
+    "author": "Beekeeper Studio",
     "description": "A theme based on the Tokyo Night palette.",
-    "repo": "azmy60/bks-tokyo-night"
+    "repo": "beekeeper-studio/theme-tokyo-night"
   },
   {
     "id": "nyx",
@@ -38,7 +38,7 @@
     "id": "evening",
     "name": "Evening",
     "author": "Beekeeper Studio",
-    "description": "Dusky plum, dusty rose and warm amber from street silhouettes and sunset skies, balanced by waterfront blue and cloud lilac.",
+    "description": "Sunset skies. Tropical. Urban.",
     "repo": "beekeeper-studio/theme-evening"
   },
   {
