@@ -3,7 +3,7 @@
     "id": "tokyo-night",
     "name": "Tokyo Night",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the Tokyo Night palette.",
+    "description": "A theme that celebrates the lights of Downtown Tokyo at night. Based on the Tokyo Night VS Code theme.",
     "repo": "beekeeper-studio/theme-tokyo-night"
   },
   {
@@ -17,7 +17,7 @@
     "id": "blueberry-banana",
     "name": "Blueberry Banana",
     "author": "Beekeeper Studio",
-    "description": "A fork of the Blueberry Banana VS Code theme by Peter Shershov.",
+    "description": "Blueberry Banana is an easy-on-the-eyes theme with a cyberpunkish feeling. A fork of the Blueberry Banana VS Code theme by Peter Shershov.",
     "repo": "beekeeper-studio/theme-blueberry-banana"
   },
   {
@@ -31,7 +31,7 @@
     "id": "monokai",
     "name": "Monokai",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the classic Monokai palette.",
+    "description": "Vivid pink, green, and yellow accents on a warm charcoal background. Based on the classic Monokai palette.",
     "repo": "beekeeper-studio/theme-monokai"
   },
   {
@@ -52,28 +52,28 @@
     "id": "gruvbox",
     "name": "Gruvbox",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the gruvbox palette",
+    "description": "Retro and earthy: warm browns and creams with muted red, orange, and yellow accents. Based on the Gruvbox palette.",
     "repo": "beekeeper-studio/theme-gruvbox"
   },
   {
     "id": "ayu",
     "name": "Ayu",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the Ayu palette",
+    "description": "Clean and minimal, with bright orange accents on soft, uncluttered backgrounds. Based on the Ayu palette.",
     "repo": "beekeeper-studio/theme-ayu"
   },
   {
     "id": "catppuccin",
     "name": "Catppuccin",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the Catppuccin color palette, using Latte for light, and Mocha for dark",
+    "description": "Soothing pastels on soft, low-contrast backgrounds. Uses Catppuccin Latte for light mode and Mocha for dark.",
     "repo": "beekeeper-studio/theme-catppuccin"
   },
   {
     "id": "nord",
     "name": "Nord",
     "author": "Beekeeper Studio",
-    "description": "A theme based on the Nord palette.",
+    "description": "Cool arctic blues and frosty grays with a calm, muted feel. Based on the Nord palette.",
     "repo": "beekeeper-studio/theme-nord"
   }
 ]
