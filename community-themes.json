@@ -75,5 +75,12 @@
     "author": "Beekeeper Studio",
     "description": "Cool arctic blues and frosty grays with a calm, muted feel. Based on the Nord palette.",
     "repo": "beekeeper-studio/theme-nord"
+  },
+  {
+    "id": "ai-psychosis",
+    "name": "AI Psychosis",
+    "author": "Beekeeper Studio",
+    "description": "A theme that commits every AI design trope at once. Purple gradients, glass, glow, sparkles, Inter. For AI maximalists.",
+    "repo": "rathboma/bks-ai-psychosis-theme"
   }
 ]
