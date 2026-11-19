@@ -21,15 +21,18 @@ jobs:
         uses: jdx/mise-action@v5
 
       - name: Validate plugin entry for registry
+        id: validate
         env:
           BASE_REF: ${{ github.base_ref }}
         run: .github/scripts/validate-entry.sh community-plugins.json plugin
 
       - name: Read the new plugin entry
         id: plugin-entry
+        if: steps.validate.outputs.skip != 'true'
         run: .github/scripts/read-entry.sh community-plugins.json
 
       - name: Fetch and compare manifest
+        if: steps.validate.outputs.skip != 'true'
         env:
           ENTRY: ${{ steps.plugin-entry.outputs.entry }}
           REPO: ${{ steps.plugin-entry.outputs.repo }}
@@ -37,6 +40,7 @@ jobs:
         run: .github/scripts/fetch-manifest.sh
 
       - name: Validate release
+        if: steps.validate.outputs.skip != 'true'
         env:
           REPO: ${{ steps.plugin-entry.outputs.repo }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -11,6 +11,17 @@ LABEL="$2"           # e.g. plugin
 
 git show "origin/${BASE_REF}:${REGISTRY_FILE}" > base.json
 
+# skip validation entirely if the registry is semantically unchanged
+# (e.g. a whitespace/formatting-only diff with no added entry)
+if jq -e -n \
+  --slurpfile base base.json \
+  --slurpfile head "$REGISTRY_FILE" \
+  '($base[0]) == ($head[0])' > /dev/null; then
+  echo "No substantive change to ${REGISTRY_FILE}; skipping ${LABEL} validation."
+  echo "skip=true" >> "$GITHUB_OUTPUT"
+  exit 0
+fi
+
 # check that exactly one entry was added and that none were removed or modified
 jq -n \
   --slurpfile base base.json \

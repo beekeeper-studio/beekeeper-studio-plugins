@@ -21,15 +21,18 @@ jobs:
         uses: jdx/mise-action@v5
 
       - name: Validate theme entry for registry
+        id: validate
         env:
           BASE_REF: ${{ github.base_ref }}
         run: .github/scripts/validate-entry.sh community-themes.json theme
 
       - name: Read the new theme entry
         id: theme-entry
+        if: steps.validate.outputs.skip != 'true'
         run: .github/scripts/read-entry.sh community-themes.json
 
       - name: Fetch and compare manifest
+        if: steps.validate.outputs.skip != 'true'
         env:
           ENTRY: ${{ steps.theme-entry.outputs.entry }}
           REPO: ${{ steps.theme-entry.outputs.repo }}
@@ -37,6 +40,7 @@ jobs:
         run: .github/scripts/fetch-manifest.sh
 
       - name: Validate release
+        if: steps.validate.outputs.skip != 'true'
         env:
           REPO: ${{ steps.theme-entry.outputs.repo }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
