@@ -82,5 +82,12 @@
     "author": "Beekeeper Studio",
     "description": "A theme that commits every AI design trope at once. Purple gradients, glass, glow, sparkles, Inter. For AI maximalists.",
     "repo": "rathboma/bks-ai-psychosis-theme"
+  },
+  {
+    "id": "hellfire",
+    "name": "Hellfire",
+    "author": "Austin Wilcox",
+    "description": "Doom-inspired. Hellfire reds, gunmetal HUD, nukage green and plasma blue. Rip and tear your queries. AI generated.",
+    "repo": "austinwilcox/hellfire-theme"
   }
 ]
