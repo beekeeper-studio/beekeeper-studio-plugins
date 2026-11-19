@@ -21,81 +21,23 @@ jobs:
         uses: jdx/mise-action@v5
 
       - name: Validate theme entry for registry
-        run: |
-          git show "origin/${{ github.base_ref }}:community-themes.json" > base.json
-
-          jq -n \
-            --slurpfile base base.json \
-            --slurpfile head community-themes.json \
-            '
-            ($base[0]) as $b | ($head[0]) as $h |
-            ($h | length) == ($b | length) + 1
-            and ($b - $h | length) == 0
-            ' | grep -q true || {
-              echo "::error::PR must add exactly one theme and modify no existing ones"
-              exit 1
-            }
-
-          DUP_ID=$(jq -r 'group_by(.id) | map(select(length > 1) | .[0].id) | .[0] // empty' community-themes.json)
-
-          if [ -n "$DUP_ID" ]; then
-            echo "::error file=community-themes.json::Duplicate theme id detected '${DUP_ID}'"
-            exit 1
-          fi
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: .github/scripts/validate-entry.sh community-themes.json theme
 
       - name: Read the new theme entry
         id: theme-entry
-        run: |
-          NEW=$(jq -n \
-            --slurpfile base base.json \
-            --slurpfile head community-themes.json \
-            '($head[0]) - ($base[0]) | .[0]')
-
-          echo "entry=$(echo "$NEW" | jq -c .)" >> "$GITHUB_OUTPUT"
-          echo "repo=$(echo "$NEW" | jq -r .repo)" >> "$GITHUB_OUTPUT"
+        run: .github/scripts/read-entry.sh community-themes.json
 
       - name: Fetch and compare manifest
         env:
           ENTRY: ${{ steps.theme-entry.outputs.entry }}
-          REPO: ${{ steps.theme-entry.outputs.repo}}
+          REPO: ${{ steps.theme-entry.outputs.repo }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh api "repos/${REPO}/contents/manifest.json" \
-            -H "Accept: application/vnd.github.raw" > manifest.json \
-            || { echo "::error::Could not fetch manifest.json from ${REPO}"; exit 1; }
-
-          ERR=$(jq -n \
-            --argjson entry "$ENTRY" \
-            --slurpfile manifest manifest.json \
-            '
-            ($manifest[0]) as $m |
-            if $entry.id == $m.id then true
-            else error("id mismatch: entry=\($entry.id) manifest=\($m.id)")
-            end
-            ' 2>&1) || { echo "::error::$ERR"; exit 1; }
+        run: .github/scripts/fetch-manifest.sh
 
       - name: Validate release
         env:
           REPO: ${{ steps.theme-entry.outputs.repo }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          gh api "repos/${REPO}/releases/latest" > release.json 2>/dev/null \
-            || { echo "::error::No release found on ${REPO}"; exit 1; }
-
-          TAG=$(jq -r '.tag_name' release.json)
-          VERSION=$(jq -r '.version' manifest.json)
-          THEME_ID=$(jq -r '.id' manifest.json)
-
-          if [ "${TAG#v}" != "$VERSION" ]; then
-            echo "::error::Release tag '${TAG}' does not match manifest version '${VERSION}'"
-            exit 1
-          fi
-
-          ZIP="${THEME_ID}-${VERSION}.zip"
-          ASSET_NAMES=$(jq -r '.assets[].name' release.json)
-
-          echo "$ASSET_NAMES" | grep -qx "manifest.json" \
-            || { echo "::error::Release '${TAG}' is missing a 'manifest.json' asset"; exit 1; }
-
-          echo "$ASSET_NAMES" | grep -qx "$ZIP" \
-            || { echo "::error::Release '${TAG}' is missing the theme zip '${ZIP}'"; exit 1; }
+        run: .github/scripts/validate-release.sh theme
