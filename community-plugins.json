@@ -26,5 +26,12 @@
         "author": "T3zcaDev",
         "description": "Live stream cloning, smart backups, schema diff, health auditor, mock data generator, and Docker/.env auto-discovery.",
         "repo": "JonathanHerSa/bks-db-manager"
+    },
+    {
+        "id": "beekeeper-column-finder",
+        "name": "Column Finder",
+        "author": "Vitor Hugo",
+        "description": "Find columns across PostgreSQL, MySQL, and MariaDB tables and views using read-only schema searches.",
+        "repo": "hugoalves-dev/beekeeper-studio-column-finder"
     }
 ]
