@@ -89,5 +89,12 @@
     "author": "Austin Wilcox",
     "description": "Doom-inspired. Hellfire reds, gunmetal HUD, nukage green and plasma blue. Rip and tear your queries. AI generated.",
     "repo": "austinwilcox/hellfire-theme"
+  },
+  {
+    "id": "drakon",
+    "name": "Drakon",
+    "author": "Jonathan Hernandez Sanchez",
+    "description": "Dragonglass. Obsidian glass with a single molten accent in the dark; platinum, ink and blood red in the light. Glass panels and luminous hairlines.",
+    "repo": "JonathanHerSa/beekeeper-theme-drakon"
   }
 ]
