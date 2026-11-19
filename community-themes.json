@@ -82,5 +82,12 @@
     "author": "Beekeeper Studio",
     "description": "A theme that commits every AI design trope at once. Purple gradients, glass, glow, sparkles, Inter. For AI maximalists.",
     "repo": "rathboma/bks-ai-psychosis-theme"
+  },
+  {
+    "id": "catppuccin",
+    "name": "Catppuccin",
+    "author": "RemcoE33",
+    "description": "Soothing pastel theme — Catppuccin Latte in light mode, Catppuccin Mocha in dark mode, with mauve accents and style-guide syntax colors.",
+    "repo": "RemcoE33/catppuccin-beekeeper-studio"
   }
 ]
