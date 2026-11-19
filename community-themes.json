@@ -91,6 +91,13 @@
     "repo": "austinwilcox/hellfire-theme"
   },
   {
+    "id": "matrix",
+    "name": "Matrix",
+    "author": "pintamonas4575",
+    "description": "Pure black and phosphor lime green, with a terminal grid and CRT glow. Wake up, Neo.",
+    "repo": "pintamonas4575/beekeeper-studio-matrix-theme"
+  },
+  {
     "id": "drakon",
     "name": "Drakon",
     "author": "Jonathan Hernandez Sanchez",
