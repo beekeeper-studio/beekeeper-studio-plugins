@@ -96,5 +96,12 @@
     "author": "pintamonas4575",
     "description": "Pure black and phosphor lime green, with a terminal grid and CRT glow. Wake up, Neo.",
     "repo": "pintamonas4575/beekeeper-studio-matrix-theme"
+  },
+  {
+    "id": "drakon",
+    "name": "Drakon",
+    "author": "Jonathan Hernandez Sanchez",
+    "description": "Dragonglass. Obsidian glass with a single molten accent in the dark; platinum, ink and blood red in the light. Glass panels and luminous hairlines.",
+    "repo": "JonathanHerSa/beekeeper-theme-drakon"
   }
 ]

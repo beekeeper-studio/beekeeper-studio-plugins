@@ -1,0 +1,47 @@
+name: Validate Plugin Submission
+
+permissions:
+  contents: read
+
+on:
+  pull_request:
+    paths:
+      - 'community-plugins.json'
+
+jobs:
+  validate-plugin:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Install jq
+        uses: jdx/mise-action@v5
+
+      - name: Validate plugin entry for registry
+        id: validate
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: .github/scripts/validate-entry.sh community-plugins.json plugin
+
+      - name: Read the new plugin entry
+        id: plugin-entry
+        if: steps.validate.outputs.skip != 'true'
+        run: .github/scripts/read-entry.sh community-plugins.json
+
+      - name: Fetch and compare manifest
+        if: steps.validate.outputs.skip != 'true'
+        env:
+          ENTRY: ${{ steps.plugin-entry.outputs.entry }}
+          REPO: ${{ steps.plugin-entry.outputs.repo }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: .github/scripts/fetch-manifest.sh
+
+      - name: Validate release
+        if: steps.validate.outputs.skip != 'true'
+        env:
+          REPO: ${{ steps.plugin-entry.outputs.repo }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: .github/scripts/validate-release.sh plugin
