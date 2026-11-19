@@ -89,5 +89,12 @@
     "author": "Austin Wilcox",
     "description": "Doom-inspired. Hellfire reds, gunmetal HUD, nukage green and plasma blue. Rip and tear your queries. AI generated.",
     "repo": "austinwilcox/hellfire-theme"
+  },
+  {
+    "id": "matrix",
+    "name": "Matrix",
+    "author": "pintamonas4575",
+    "description": "Pure black and phosphor lime green, with a terminal grid and CRT glow. Wake up, Neo.",
+    "repo": "pintamonas4575/beekeeper-studio-matrix-theme"
   }
 ]
