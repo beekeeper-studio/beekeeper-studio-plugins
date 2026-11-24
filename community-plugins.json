@@ -3,7 +3,7 @@
         "id": "gatekeeper",
         "name": "Gatekeeper",
         "author": "Gldywn",
-        "description": "Human-approved SQL for AI agents: an agent proposes a query, you approve it in Beekeeper Studio before it runs, read-only by default.",
+        "description": "The database harness for AI agents. Stop gambling with your production database.",
         "repo": "Gldywn/gatekeeper"
     },
     {
