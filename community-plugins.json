@@ -1,1 +1,9 @@
-[]
+[
+  {
+    "id": "bks-dba-overview",
+    "name": "DBA Overview",
+    "author": "Jonathan Hernandez Sanchez",
+    "description": "Database administration overview for Beekeeper Studio: storage inventory, schema & index health, live activity & locks, top queries, and server KPIs.",
+    "repo": "JonathanHerSa/bks-dba-overview"
+  }
+]
